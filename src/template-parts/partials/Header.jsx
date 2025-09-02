@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import logo from "../../images/header/logo.svg";
 
 const Header = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -44,16 +45,54 @@ const Header = () => {
     <header className="header">
       <div className="header__container">
         <a href="/" className="header__logo" onClick={handleLinkClick}>
-          <img src="" alt="Header logo" />
+          <img src={logo} alt="Header logo" />
         </a>
         <nav
           className={`header__nav ${menuActive ? "active" : ""}`}
           ref={navRef}
         >
-          <a href="#home" onClick={handleLinkClick}>Home</a>
-          <a href="#about" onClick={handleLinkClick}>About</a>
-          <a href="#contact" onClick={handleLinkClick}>Contact</a>
+          <a href="#" onClick={handleLinkClick}>
+            About Us
+          </a>
+          <a href="#" onClick={handleLinkClick}>
+            Courses
+          </a>
+          <a href="#" onClick={handleLinkClick}>
+            Events
+          </a>
+          <a href="#" onClick={handleLinkClick}>
+            Blog
+          </a>
+          <a href="#" onClick={handleLinkClick}>
+            Contacts
+          </a>
         </nav>
+        <div className="header__buttons">
+          <button className="button button__orange">Get consultation</button>
+          <button className="button button__transpatent">
+            {" "}
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M10.0002 2.70866C8.38936 2.70866 7.08353 4.0145 7.08353 5.62533C7.08353 7.23616 8.38936 8.54199 10.0002 8.54199C11.611 8.54199 12.9169 7.23616 12.9169 5.62533C12.9169 4.0145 11.611 2.70866 10.0002 2.70866ZM5.41686 5.62533C5.41686 3.09402 7.46889 1.04199 10.0002 1.04199C12.5315 1.04199 14.5835 3.09402 14.5835 5.62533C14.5835 8.15663 12.5315 10.2087 10.0002 10.2087C7.46889 10.2087 5.41686 8.15663 5.41686 5.62533Z"
+                fill="#424551"
+              />
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M5.08691 12.7087C4.50914 12.7087 4.05755 12.99 3.87424 13.3942C3.62053 13.9536 3.39078 14.6196 3.33656 15.2513C3.31233 15.5337 3.43006 15.7418 3.5923 15.8426C4.44993 16.3753 6.43719 17.292 10.0002 17.292C13.5632 17.292 15.5505 16.3753 16.4081 15.8426C16.5703 15.7418 16.6881 15.5337 16.6638 15.2513C16.6096 14.6196 16.3799 13.9536 16.1261 13.3942C15.9428 12.99 15.4912 12.7087 14.9135 12.7087H5.08691ZM2.35639 12.7058C2.86301 11.5887 3.99428 11.042 5.08691 11.042H14.9135C16.0061 11.042 17.1374 11.5887 17.644 12.7058C17.935 13.3474 18.2472 14.2099 18.3244 15.1088C18.3946 15.9273 18.0544 16.7819 17.2876 17.2583C16.1596 17.959 13.8665 18.9587 10.0002 18.9587C6.13386 18.9587 3.84078 17.959 2.71283 17.2583C1.94595 16.7819 1.60575 15.9273 1.676 15.1088C1.75315 14.2099 2.0654 13.3474 2.35639 12.7058Z"
+                fill="#424551"
+              />
+            </svg>{" "}Log in / Register
+          </button>
+        </div>
         <div
           className={`header__burger ${menuActive ? "active" : ""}`}
           onClick={toggleMenu}
