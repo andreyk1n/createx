@@ -5,12 +5,14 @@
   top: 0;
   left: 0;
   transition-duration: .5s;
+  padding: 10px 0;
 
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 52px;
+    gap: 20px;
   }
 
   &__logo {
@@ -23,11 +25,19 @@
     display: flex;
     gap: 30px;
     align-items: center;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+
+      button {
+        width: 100%;
+      }
+    }
   }
 
   &__nav {
     width: 100%;
-    max-width: 715px;
+    max-width: 400px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +72,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     &__nav {
       position: absolute;
       right: -100%;
