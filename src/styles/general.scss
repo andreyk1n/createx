@@ -42,6 +42,7 @@ body {
     background-color: transparent;
     cursor: pointer;
     transition-duration: .5s;
+    border-radius: 8px;
 
     &__orange {
         background: linear-gradient(-75deg, #ff3f3a 0, #f75e05 100%);
@@ -70,4 +71,24 @@ body {
             transform: scale(1.05);
         }
     }
+
+    &__white {
+        background: transparent;
+        padding: 0 40px;
+        color: #f75e05;
+        font-weight: 700;
+        border: 2px solid;
+        border: 2px solid #f75e05;
+
+        &:hover {
+            box-shadow: 0 8px 24px rgba(247, 94, 5, 0.2);
+            transform: scale(1.05);
+        }
+    }
+}
+
+h1 {
+    color: #1e212c;
+    font-size: clamp(44px, 5vw, 64px);
+    font-weight: 900;
 }

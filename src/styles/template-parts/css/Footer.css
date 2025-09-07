@@ -1,0 +1,187 @@
+.footer {
+  background-color: #1E212C;
+  width: 100%;
+  padding: 80px 0 0 0;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 0 0 0;
+  }
+}
+.footer__description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .footer__logo {
+    width: 140px;
+    height: auto;
+  }
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+@media (max-width: 1100px) {
+  .footer__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .footer__row {
+    grid-template-columns: 1fr;
+  }
+}
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__col p {
+  display: block;
+  margin-bottom: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer__col a {
+  color: #656979;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  width: fit-content;
+  position: relative;
+  text-decoration: none;
+}
+.footer__col a::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #656979;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition-duration: 0.5s;
+}
+.footer__col a:hover::after {
+  width: 100%;
+}
+.footer__nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .footer__nav {
+    grid-template-columns: 1fr;
+  }
+}
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 280px;
+}
+.footer__socials {
+  margin-top: 14px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.footer__socials a {
+  transition-duration: 0.5s;
+}
+.footer__socials a:hover {
+  transform: scale(0.9);
+  opacity: 0.5;
+}
+.footer__news {
+  max-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+.footer__news span {
+  color: #fff;
+  font-size: 10px;
+  display: block;
+  margin-top: 12px;
+}
+.footer__news p {
+  display: block;
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer__news .input-wrapper {
+  position: relative;
+}
+.footer__news .input-wrapper::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  display: block;
+  background: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.86193 4.52925C10.1223 4.2689 10.5444 4.2689 10.8047 4.52925L13.8047 7.52925C14.0651 7.7896 14.0651 8.21171 13.8047 8.47206L10.8047 11.4721C10.5444 11.7324 10.1223 11.7324 9.86193 11.4721C9.60158 11.2117 9.60158 10.7896 9.86193 10.5292L11.7239 8.66732H2.66667C2.29848 8.66732 2 8.36884 2 8.00065C2 7.63246 2.29848 7.33398 2.66667 7.33398H11.7239L9.86193 5.47206C9.60158 5.21171 9.60158 4.7896 9.86193 4.52925Z" fill="white"/></svg>');
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.footer__news input {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2901960784);
+  outline: none;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2901960784);
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+}
+.footer__news input::placeholder {
+  color: #fff;
+  font-size: 14px;
+}
+.footer__privacy {
+  margin-top: 60px;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  padding: 20px 0;
+}
+.footer__privacy .footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 576px) {
+  .footer__privacy .footer__container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer__privacy p {
+  font-size: 12px;
+  color: #fff;
+}
+.footer__privacy button {
+  background-color: transparent;
+  transition-duration: 0.5s;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.footer__privacy button:hover {
+  opacity: 0.5;
+}
