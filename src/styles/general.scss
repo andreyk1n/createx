@@ -92,3 +92,17 @@ h1 {
     font-size: clamp(44px, 5vw, 64px);
     font-weight: 900;
 }
+
+h2 {
+    color: #1e212c;
+    font-size: clamp(32px, 2.5vw, 46px);
+    font-weight: 900;
+}
+
+.label {
+    color: #1e212c;
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    padding-bottom: 8px;
+}
