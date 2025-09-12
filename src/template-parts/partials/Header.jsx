@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
-import logo from "../../images/header/logo.svg"; 
+import { NavLink } from "react-router-dom"; 
+import logo from "../../images/header/logo.svg";
 
 function useWindowWidth() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -63,21 +64,41 @@ function Header() {
           className={`header__nav ${menuActive ? "active" : ""}`}
           ref={navRef}
         >
-          <a className="header__link" href="#about" onClick={handleLinkClick}>
+          <NavLink
+            className="header__link"
+            to="/about"
+            onClick={handleLinkClick}
+          >
             About Us
-          </a>
-          <a className="header__link" href="#courses" onClick={handleLinkClick}>
+          </NavLink>
+          <NavLink
+            className="header__link"
+            to="/courses"
+            onClick={handleLinkClick}
+          >
             Courses
-          </a>
-          <a className="header__link" href="#events" onClick={handleLinkClick}>
+          </NavLink>
+          <NavLink
+            className="header__link"
+            to="/events"
+            onClick={handleLinkClick}
+          >
             Events
-          </a>
-          <a className="header__link" href="#blog" onClick={handleLinkClick}>
+          </NavLink>
+          <NavLink
+            className="header__link"
+            to="/blog"
+            onClick={handleLinkClick}
+          >
             Blog
-          </a>
-          <a className="header__link" href="#contacts" onClick={handleLinkClick}>
+          </NavLink>
+          <NavLink
+            className="header__link"
+            to="/contacts"
+            onClick={handleLinkClick}
+          >
             Contacts
-          </a>
+          </NavLink>
 
           {isMobile && (
             <div className="header__buttons">

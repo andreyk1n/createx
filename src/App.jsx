@@ -1,20 +1,30 @@
-// src/App.jsx
-import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./template-parts/partials/Header";
-import Hero from "./template-parts/components/Hero";
-import List from "./template-parts/components/List";
-import Courses from "./template-parts/components/Courses";
 import Footer from "./template-parts/partials/Footer";
+
+// сторінки лежать у template-parts/pages
+import About from "./template-parts/pages/About";
+import Courses from "./template-parts/pages/Courses";
+import Events from "./template-parts/pages/Events";
+import Blog from "./template-parts/pages/Blog";
+import Contacts from "./template-parts/pages/Contacts";
 
 function App() {
   return (
-    <div>
+    <Router>
       <Header />
-      <Hero />
-      <List />
-      <Courses />
+
+      <Routes>
+        <Route path="/" element={<About />} /> {/* головна сторінка */}
+        <Route path="/about" element={<About />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Routes>
+
       <Footer />
-    </div>
+    </Router>
   );
 }
 
