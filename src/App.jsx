@@ -3,6 +3,7 @@ import Header from "./template-parts/partials/Header";
 import Footer from "./template-parts/partials/Footer";
 
 // сторінки лежать у template-parts/pages
+import Main from "./template-parts/pages/Main";
 import About from "./template-parts/pages/About";
 import Courses from "./template-parts/pages/Courses";
 import Events from "./template-parts/pages/Events";
@@ -15,7 +16,7 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<About />} /> {/* головна сторінка */}
+        <Route path="/" element={<Main />} /> {/* головна сторінка */}
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<Courses />} />
         <Route path="/events" element={<Events />} />

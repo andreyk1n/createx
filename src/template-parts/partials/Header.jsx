@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { NavLink } from "react-router-dom"; 
+import { NavLink, Link } from "react-router-dom";
 import logo from "../../images/header/logo.svg";
 
 function useWindowWidth() {
@@ -48,9 +48,9 @@ function Header() {
   return (
     <header className="header">
       <div className="header__container">
-        <a href="/" className="header__logo">
+        <Link to="/" className="header__logo">
           <img src={logo} alt="Header logo" />
-        </a>
+        </Link>
 
         <div
           className={`header__burger ${menuActive ? "active" : ""}`}
