@@ -1,0 +1,110 @@
+.events {
+    width: 100%;
+    background-color: #feddd0;
+    padding: 80px 0;
+    position: relative;
+
+
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__items {
+        width: 100%;
+        margin: 60px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__item {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        transition-duration: .5s;
+        padding: 32px 40px;
+        gap: 20px;
+
+        &:hover {
+            box-shadow: 0 4px 4px -4px rgba(30, 33, 44, .05), 0 12px 10px -6px rgba(255, 63, 58, .08), 0 30px 24px -10px rgba(255, 63, 58, .1), 0 80px 80px -20px rgba(255, 63, 58, .16);
+        }
+    }
+
+    &__date {
+        width: 180px;
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        color: #ff3f3a;
+        font-size: clamp(20px, 4vw, 48px);
+        font-weight: 900;
+
+        &>div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            color: #787a80;
+            font-size: 16px;
+            font-weight: 400;
+
+            b {
+                color: #1e212c;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        p {
+            color: #1e212c;
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        span {
+            color: #787a80;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        p {
+            color: #1e212c;
+            font-size: clamp(20px, 3vw, 28px);
+            font-weight: 700;
+        }
+    }
+
+    &__decor {
+        z-index: 1;
+        position: absolute;
+
+        &--1 {
+            right: -60px;
+            top: -113px;
+            opacity: .3;
+        }
+
+        &--2 {
+            bottom: 0;
+            left: 0;
+            opacity: .8;
+        }
+    }
+}
