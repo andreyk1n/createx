@@ -38,7 +38,7 @@
         background-color: #fff;
         transition-duration: .5s;
         padding: 32px 40px;
-        gap: 20px;
+        gap: 40px;
         
         @media (max-width: 992px) {
             flex-wrap: wrap;
@@ -77,9 +77,14 @@
     }
 
     &__text {
+        width: calc(100% - 416px);
         display: flex;
         flex-direction: column;
         gap: 5px;
+
+        @media (max-width: 992px) {
+            width: 100%;
+        }
 
         p {
             color: #1e212c;

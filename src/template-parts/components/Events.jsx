@@ -23,33 +23,31 @@ const Events = () => {
                 </div>
                 <button className="events__button button button__white">View more</button>
             </div>
-
             <div className="events__item">
                 <div className="events__date">
-                    05
+                    24
                     <div>
-                        <b>August</b>
-                        11:00 – 14:00
+                        <b>July</b>
+                        11:00 – 12:30
                     </div>
                 </div>
                 <div className="events__text">
-                    <p>Formation of the organizational structure of the company in the face of uncertainty.</p>
-                    <span>Onine master-class</span>
+                    <p>Building a customer service department. Best Practices.</p>
+                    <span>Onine lecture</span>
                 </div>
                 <button className="events__button button button__white">View more</button>
             </div>
-
             <div className="events__item">
                 <div className="events__date">
-                    05
+                    16
                     <div>
-                        <b>August</b>
-                        11:00 – 14:00
+                        <b>July</b>
+                        10:00 – 13:00
                     </div>
                 </div>
                 <div className="events__text">
-                    <p>Formation of the organizational structure of the company in the face of uncertainty.</p>
-                    <span>Onine master-class</span>
+                    <p>How to apply methods of speculative design in practice. Worldbuilding prototyping.</p>
+                    <span>Onine workshop</span>
                 </div>
                 <button className="events__button button button__white">View more</button>
             </div>
